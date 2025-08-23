@@ -28,6 +28,8 @@ class DataFromSource():
         try:
             data = ld.get_history(universe=[self.RIC], fields=['TR.PriceClose'], interval="1D",
                start = initial_day, end = today)
+            data['close'] = data['Price Close'].astype(float)
+            data = data.drop(['Price Close'], axis=1)
             return data
         except Exception as e:
             print(f"Error retrieving data for {self.RIC}: {e}")
@@ -37,9 +39,8 @@ class DataFromSource():
         prices = self.get_prices()
         if prices is not None:
             try:
-                prices['Close'] = prices['Price Close'].astype(float)
-                prices[self.RIC] = np.log(prices['Close'].div(prices['Close'].shift(1)))
-                daily_returns = prices.drop(['Price Close', 'Close'], axis=1)
+                prices[self.RIC] = np.log(prices['close'].div(prices['close'].shift(1)))
+                daily_returns = prices.drop(['close'], axis=1)
                 return daily_returns
             except Exception as e:
                 print(f"Error calculating daily returns for {self.RIC}: {e}")
