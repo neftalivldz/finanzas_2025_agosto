@@ -1,4 +1,4 @@
-Calc Date,Instrument,Close Price,Forward P/E (Daily Time Series Ratio),P/E (Daily Time Series Ratio),Earnings Per Share - Mean,Revenue - Mean
+CalcDate,Instrument,ClosePrice,ForwardPE,PEDaily,EarningsPerShare,Revenue
 2015-10-26,MSFT.O,,18.934182457,35.6445922061539,2.75007,92663896850
 2015-10-27,MSFT.O,,18.689218523,35.276648028542,2.7584,92827052720
 2015-10-28,MSFT.O,,18.764844923,35.467190549091,2.76207,92827052720

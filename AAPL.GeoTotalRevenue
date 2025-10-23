@@ -1,4 +1,4 @@
-,Instrument,Segment Name,Geographic Total Revenues (Calculated),Company Name
+,Instrument,SegmentName,GeographicTotalRevenues,CompanyName
 0,AAPL.O,United States,142196000000,Apple Inc
 1,AAPL.O,China,66952000000,
 2,AAPL.O,Other countries,181887000000,

@@ -1,4 +1,4 @@
-Calc Date,Instrument,Close Price,Forward P/E (Daily Time Series Ratio),P/E (Daily Time Series Ratio),Earnings Per Share - Mean,Revenue - Mean
+CalcDate,Instrument,ClosePrice,ForwardPE,PEDaily,EarningsPerShare,Revenue
 2015-10-26,AAPL.O,28.82,11.75904165,13.316268303,2.2828,233288482740
 2015-10-27,AAPL.O,28.6375,11.595837625,13.231944258,2.45981,245619417260
 2015-10-28,AAPL.O,29.8175,12.013698151,13.777162738,2.46404,245118600290
